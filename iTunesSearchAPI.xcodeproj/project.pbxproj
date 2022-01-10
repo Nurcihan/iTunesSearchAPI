@@ -1,0 +1,899 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		355ED300E330F963707ADD32 /* Pods_iTunesSearchAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B657657259DC9D6A1DAEC12 /* Pods_iTunesSearchAPI.framework */; };
+		6BE8888C278CBB3900D11AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8888B278CBB3900D11AAE /* AppDelegate.swift */; };
+		6BE8888E278CBB3900D11AAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8888D278CBB3900D11AAE /* SceneDelegate.swift */; };
+		6BE88890278CBB3900D11AAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8888F278CBB3900D11AAE /* ViewController.swift */; };
+		6BE88893278CBB3900D11AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE88891278CBB3900D11AAE /* Main.storyboard */; };
+		6BE88895278CBB3B00D11AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE88894278CBB3B00D11AAE /* Assets.xcassets */; };
+		6BE88898278CBB3B00D11AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE88896278CBB3B00D11AAE /* LaunchScreen.storyboard */; };
+		6BE888A3278CBB3B00D11AAE /* iTunesSearchAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888A2278CBB3B00D11AAE /* iTunesSearchAPITests.swift */; };
+		6BE888AD278CBB3B00D11AAE /* iTunesSearchAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888AC278CBB3B00D11AAE /* iTunesSearchAPIUITests.swift */; };
+		6BE888AF278CBB3B00D11AAE /* iTunesSearchAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888AE278CBB3B00D11AAE /* iTunesSearchAPIUITestsLaunchTests.swift */; };
+		6BE888C7278CBBC600D11AAE /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888BE278CBBC600D11AAE /* DetailViewModel.swift */; };
+		6BE888C8278CBBC600D11AAE /* FooterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888BF278CBBC600D11AAE /* FooterViewModel.swift */; };
+		6BE888C9278CBBC600D11AAE /* ContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888C0278CBBC600D11AAE /* ContentListViewModel.swift */; };
+		6BE888CA278CBBC600D11AAE /* ModelCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888C1278CBBC600D11AAE /* ModelCollectionCellViewModel.swift */; };
+		6BE888CB278CBBC600D11AAE /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888C3278CBBC600D11AAE /* ResponseModel.swift */; };
+		6BE888CC278CBBC600D11AAE /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888C4278CBBC600D11AAE /* URLSession+Extension.swift */; };
+		6BE888CD278CBBC600D11AAE /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888C5278CBBC600D11AAE /* iTunesAPI.swift */; };
+		6BE888CE278CBBC600D11AAE /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888C6278CBBC600D11AAE /* HeaderViewModel.swift */; };
+		6BE888D1278CBBD300D11AAE /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888CF278CBBD300D11AAE /* SectionModel.swift */; };
+		6BE888D2278CBBD300D11AAE /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888D0278CBBD300D11AAE /* ContentModel.swift */; };
+		6BE888DB278CBBE100D11AAE /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888D3278CBBE100D11AAE /* GlobalConstants.swift */; };
+		6BE888DC278CBBE100D11AAE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888D4278CBBE100D11AAE /* DetailViewController.swift */; };
+		6BE888DD278CBBE100D11AAE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888D5278CBBE100D11AAE /* SplashViewController.swift */; };
+		6BE888DE278CBBE100D11AAE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888D6278CBBE100D11AAE /* SearchViewController.swift */; };
+		6BE888DF278CBBE100D11AAE /* ModelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888D8278CBBE100D11AAE /* ModelCollectionCell.swift */; };
+		6BE888E0278CBBE100D11AAE /* HeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888D9278CBBE100D11AAE /* HeaderReusableView.swift */; };
+		6BE888E5278CCD5400D11AAE /* CollectionFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE888E4278CCD5400D11AAE /* CollectionFooterReusableView.swift */; };
+		AB9CB5DF7B5BF94FDA965885 /* Pods_iTunesSearchAPI_iTunesSearchAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B0DB18AB90F58476C3AA9A /* Pods_iTunesSearchAPI_iTunesSearchAPIUITests.framework */; };
+		E1D2EB04D5090CB7F8F53041 /* Pods_iTunesSearchAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9293A50FB3B498C4D980824F /* Pods_iTunesSearchAPITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BE8889F278CBB3B00D11AAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BE88880278CBB3900D11AAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BE88887278CBB3900D11AAE;
+			remoteInfo = iTunesSearchAPI;
+		};
+		6BE888A9278CBB3B00D11AAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BE88880278CBB3900D11AAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BE88887278CBB3900D11AAE;
+			remoteInfo = iTunesSearchAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B657657259DC9D6A1DAEC12 /* Pods_iTunesSearchAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesSearchAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C55D781F7069CFAC955E6A0 /* Pods-iTunesSearchAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchAPI.release.xcconfig"; path = "Target Support Files/Pods-iTunesSearchAPI/Pods-iTunesSearchAPI.release.xcconfig"; sourceTree = "<group>"; };
+		570535850E4DF6A9AD212B25 /* Pods-iTunesSearchAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchAPI.debug.xcconfig"; path = "Target Support Files/Pods-iTunesSearchAPI/Pods-iTunesSearchAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		5F7B248C8FA9BA2802476A4E /* Pods-iTunesSearchAPI-iTunesSearchAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchAPI-iTunesSearchAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-iTunesSearchAPI-iTunesSearchAPIUITests/Pods-iTunesSearchAPI-iTunesSearchAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6BE88888278CBB3900D11AAE /* iTunesSearchAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearchAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE8888B278CBB3900D11AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BE8888D278CBB3900D11AAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6BE8888F278CBB3900D11AAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BE88892278CBB3900D11AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BE88894278CBB3B00D11AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BE88897278CBB3B00D11AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BE88899278CBB3B00D11AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE8889E278CBB3B00D11AAE /* iTunesSearchAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE888A2278CBB3B00D11AAE /* iTunesSearchAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchAPITests.swift; sourceTree = "<group>"; };
+		6BE888A8278CBB3B00D11AAE /* iTunesSearchAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE888AC278CBB3B00D11AAE /* iTunesSearchAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchAPIUITests.swift; sourceTree = "<group>"; };
+		6BE888AE278CBB3B00D11AAE /* iTunesSearchAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6BE888BE278CBBC600D11AAE /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		6BE888BF278CBBC600D11AAE /* FooterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterViewModel.swift; sourceTree = "<group>"; };
+		6BE888C0278CBBC600D11AAE /* ContentListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentListViewModel.swift; sourceTree = "<group>"; };
+		6BE888C1278CBBC600D11AAE /* ModelCollectionCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelCollectionCellViewModel.swift; sourceTree = "<group>"; };
+		6BE888C3278CBBC600D11AAE /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		6BE888C4278CBBC600D11AAE /* URLSession+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		6BE888C5278CBBC600D11AAE /* iTunesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		6BE888C6278CBBC600D11AAE /* HeaderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
+		6BE888CF278CBBD300D11AAE /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		6BE888D0278CBBD300D11AAE /* ContentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		6BE888D3278CBBE100D11AAE /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		6BE888D4278CBBE100D11AAE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6BE888D5278CBBE100D11AAE /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		6BE888D6278CBBE100D11AAE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6BE888D8278CBBE100D11AAE /* ModelCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelCollectionCell.swift; sourceTree = "<group>"; };
+		6BE888D9278CBBE100D11AAE /* HeaderReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderReusableView.swift; sourceTree = "<group>"; };
+		6BE888E4278CCD5400D11AAE /* CollectionFooterReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooterReusableView.swift; sourceTree = "<group>"; };
+		913AFE93A6C0DA9817522698 /* Pods-iTunesSearchAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchAPITests.release.xcconfig"; path = "Target Support Files/Pods-iTunesSearchAPITests/Pods-iTunesSearchAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		9293A50FB3B498C4D980824F /* Pods_iTunesSearchAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesSearchAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B0DB18AB90F58476C3AA9A /* Pods_iTunesSearchAPI_iTunesSearchAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesSearchAPI_iTunesSearchAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6065DF7C12422E0F804F954 /* Pods-iTunesSearchAPI-iTunesSearchAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchAPI-iTunesSearchAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-iTunesSearchAPI-iTunesSearchAPIUITests/Pods-iTunesSearchAPI-iTunesSearchAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7353E7324F765EE348C3959 /* Pods-iTunesSearchAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchAPITests.debug.xcconfig"; path = "Target Support Files/Pods-iTunesSearchAPITests/Pods-iTunesSearchAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BE88885278CBB3900D11AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355ED300E330F963707ADD32 /* Pods_iTunesSearchAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE8889B278CBB3B00D11AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D2EB04D5090CB7F8F53041 /* Pods_iTunesSearchAPITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE888A5278CBB3B00D11AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9CB5DF7B5BF94FDA965885 /* Pods_iTunesSearchAPI_iTunesSearchAPIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BE8887F278CBB3900D11AAE = {
+			isa = PBXGroup;
+			children = (
+				6BE8888A278CBB3900D11AAE /* iTunesSearchAPI */,
+				6BE888A1278CBB3B00D11AAE /* iTunesSearchAPITests */,
+				6BE888AB278CBB3B00D11AAE /* iTunesSearchAPIUITests */,
+				6BE88889278CBB3900D11AAE /* Products */,
+				E7382AAF1225D5EC5A9CEBB2 /* Pods */,
+				EA708B691E97B95CCB5061AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BE88889278CBB3900D11AAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BE88888278CBB3900D11AAE /* iTunesSearchAPI.app */,
+				6BE8889E278CBB3B00D11AAE /* iTunesSearchAPITests.xctest */,
+				6BE888A8278CBB3B00D11AAE /* iTunesSearchAPIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BE8888A278CBB3900D11AAE /* iTunesSearchAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6BE888E2278CBC5700D11AAE /* SupportingFiles */,
+				6BE888BD278CBB5600D11AAE /* ViewModel */,
+				6BE888BC278CBB4D00D11AAE /* Model */,
+				6BE888BB278CBB4400D11AAE /* View */,
+				6BE8888F278CBB3900D11AAE /* ViewController.swift */,
+			);
+			path = iTunesSearchAPI;
+			sourceTree = "<group>";
+		};
+		6BE888A1278CBB3B00D11AAE /* iTunesSearchAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BE888A2278CBB3B00D11AAE /* iTunesSearchAPITests.swift */,
+			);
+			path = iTunesSearchAPITests;
+			sourceTree = "<group>";
+		};
+		6BE888AB278CBB3B00D11AAE /* iTunesSearchAPIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BE888AC278CBB3B00D11AAE /* iTunesSearchAPIUITests.swift */,
+				6BE888AE278CBB3B00D11AAE /* iTunesSearchAPIUITestsLaunchTests.swift */,
+			);
+			path = iTunesSearchAPIUITests;
+			sourceTree = "<group>";
+		};
+		6BE888BB278CBB4400D11AAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BE888D7278CBBE100D11AAE /* CollectionView */,
+				6BE888D4278CBBE100D11AAE /* DetailViewController.swift */,
+				6BE888D3278CBBE100D11AAE /* GlobalConstants.swift */,
+				6BE888D6278CBBE100D11AAE /* SearchViewController.swift */,
+				6BE888D5278CBBE100D11AAE /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BE888BC278CBB4D00D11AAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BE888D0278CBBD300D11AAE /* ContentModel.swift */,
+				6BE888CF278CBBD300D11AAE /* SectionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BE888BD278CBB5600D11AAE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BE888C0278CBBC600D11AAE /* ContentListViewModel.swift */,
+				6BE888BE278CBBC600D11AAE /* DetailViewModel.swift */,
+				6BE888BF278CBBC600D11AAE /* FooterViewModel.swift */,
+				6BE888C6278CBBC600D11AAE /* HeaderViewModel.swift */,
+				6BE888C1278CBBC600D11AAE /* ModelCollectionCellViewModel.swift */,
+				6BE888C2278CBBC600D11AAE /* ServiceCall */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BE888C2278CBBC600D11AAE /* ServiceCall */ = {
+			isa = PBXGroup;
+			children = (
+				6BE888C3278CBBC600D11AAE /* ResponseModel.swift */,
+				6BE888C4278CBBC600D11AAE /* URLSession+Extension.swift */,
+				6BE888C5278CBBC600D11AAE /* iTunesAPI.swift */,
+			);
+			path = ServiceCall;
+			sourceTree = "<group>";
+		};
+		6BE888D7278CBBE100D11AAE /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				6BE888D8278CBBE100D11AAE /* ModelCollectionCell.swift */,
+				6BE888D9278CBBE100D11AAE /* HeaderReusableView.swift */,
+				6BE888E4278CCD5400D11AAE /* CollectionFooterReusableView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		6BE888E2278CBC5700D11AAE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6BE8888B278CBB3900D11AAE /* AppDelegate.swift */,
+				6BE8888D278CBB3900D11AAE /* SceneDelegate.swift */,
+				6BE88896278CBB3B00D11AAE /* LaunchScreen.storyboard */,
+				6BE88899278CBB3B00D11AAE /* Info.plist */,
+				6BE88891278CBB3900D11AAE /* Main.storyboard */,
+				6BE88894278CBB3B00D11AAE /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E7382AAF1225D5EC5A9CEBB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				570535850E4DF6A9AD212B25 /* Pods-iTunesSearchAPI.debug.xcconfig */,
+				4C55D781F7069CFAC955E6A0 /* Pods-iTunesSearchAPI.release.xcconfig */,
+				C6065DF7C12422E0F804F954 /* Pods-iTunesSearchAPI-iTunesSearchAPIUITests.debug.xcconfig */,
+				5F7B248C8FA9BA2802476A4E /* Pods-iTunesSearchAPI-iTunesSearchAPIUITests.release.xcconfig */,
+				D7353E7324F765EE348C3959 /* Pods-iTunesSearchAPITests.debug.xcconfig */,
+				913AFE93A6C0DA9817522698 /* Pods-iTunesSearchAPITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA708B691E97B95CCB5061AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B657657259DC9D6A1DAEC12 /* Pods_iTunesSearchAPI.framework */,
+				B6B0DB18AB90F58476C3AA9A /* Pods_iTunesSearchAPI_iTunesSearchAPIUITests.framework */,
+				9293A50FB3B498C4D980824F /* Pods_iTunesSearchAPITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BE88887278CBB3900D11AAE /* iTunesSearchAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE888B2278CBB3B00D11AAE /* Build configuration list for PBXNativeTarget "iTunesSearchAPI" */;
+			buildPhases = (
+				728DF2F474ED238CF1EEABBA /* [CP] Check Pods Manifest.lock */,
+				6BE88884278CBB3900D11AAE /* Sources */,
+				6BE88885278CBB3900D11AAE /* Frameworks */,
+				6BE88886278CBB3900D11AAE /* Resources */,
+				9328ABE3F9029A94607898EA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTunesSearchAPI;
+			productName = iTunesSearchAPI;
+			productReference = 6BE88888278CBB3900D11AAE /* iTunesSearchAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BE8889D278CBB3B00D11AAE /* iTunesSearchAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE888B5278CBB3B00D11AAE /* Build configuration list for PBXNativeTarget "iTunesSearchAPITests" */;
+			buildPhases = (
+				A71E63FD558373165997618C /* [CP] Check Pods Manifest.lock */,
+				6BE8889A278CBB3B00D11AAE /* Sources */,
+				6BE8889B278CBB3B00D11AAE /* Frameworks */,
+				6BE8889C278CBB3B00D11AAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE888A0278CBB3B00D11AAE /* PBXTargetDependency */,
+			);
+			name = iTunesSearchAPITests;
+			productName = iTunesSearchAPITests;
+			productReference = 6BE8889E278CBB3B00D11AAE /* iTunesSearchAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BE888A7278CBB3B00D11AAE /* iTunesSearchAPIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BE888B8278CBB3B00D11AAE /* Build configuration list for PBXNativeTarget "iTunesSearchAPIUITests" */;
+			buildPhases = (
+				A0AF3D0A40022F34BECDF439 /* [CP] Check Pods Manifest.lock */,
+				6BE888A4278CBB3B00D11AAE /* Sources */,
+				6BE888A5278CBB3B00D11AAE /* Frameworks */,
+				6BE888A6278CBB3B00D11AAE /* Resources */,
+				51C57A8C2DA8A496D9283CA7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BE888AA278CBB3B00D11AAE /* PBXTargetDependency */,
+			);
+			name = iTunesSearchAPIUITests;
+			productName = iTunesSearchAPIUITests;
+			productReference = 6BE888A8278CBB3B00D11AAE /* iTunesSearchAPIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BE88880278CBB3900D11AAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6BE88887278CBB3900D11AAE = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					6BE8889D278CBB3B00D11AAE = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6BE88887278CBB3900D11AAE;
+					};
+					6BE888A7278CBB3B00D11AAE = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6BE88887278CBB3900D11AAE;
+					};
+				};
+			};
+			buildConfigurationList = 6BE88883278CBB3900D11AAE /* Build configuration list for PBXProject "iTunesSearchAPI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BE8887F278CBB3900D11AAE;
+			productRefGroup = 6BE88889278CBB3900D11AAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BE88887278CBB3900D11AAE /* iTunesSearchAPI */,
+				6BE8889D278CBB3B00D11AAE /* iTunesSearchAPITests */,
+				6BE888A7278CBB3B00D11AAE /* iTunesSearchAPIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BE88886278CBB3900D11AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE88898278CBB3B00D11AAE /* LaunchScreen.storyboard in Resources */,
+				6BE88895278CBB3B00D11AAE /* Assets.xcassets in Resources */,
+				6BE88893278CBB3900D11AAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE8889C278CBB3B00D11AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE888A6278CBB3B00D11AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51C57A8C2DA8A496D9283CA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearchAPI-iTunesSearchAPIUITests/Pods-iTunesSearchAPI-iTunesSearchAPIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearchAPI-iTunesSearchAPIUITests/Pods-iTunesSearchAPI-iTunesSearchAPIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTunesSearchAPI-iTunesSearchAPIUITests/Pods-iTunesSearchAPI-iTunesSearchAPIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		728DF2F474ED238CF1EEABBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesSearchAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9328ABE3F9029A94607898EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearchAPI/Pods-iTunesSearchAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearchAPI/Pods-iTunesSearchAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTunesSearchAPI/Pods-iTunesSearchAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0AF3D0A40022F34BECDF439 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesSearchAPI-iTunesSearchAPIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A71E63FD558373165997618C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesSearchAPITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BE88884278CBB3900D11AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE888CA278CBBC600D11AAE /* ModelCollectionCellViewModel.swift in Sources */,
+				6BE88890278CBB3900D11AAE /* ViewController.swift in Sources */,
+				6BE8888C278CBB3900D11AAE /* AppDelegate.swift in Sources */,
+				6BE888DE278CBBE100D11AAE /* SearchViewController.swift in Sources */,
+				6BE888C9278CBBC600D11AAE /* ContentListViewModel.swift in Sources */,
+				6BE888DB278CBBE100D11AAE /* GlobalConstants.swift in Sources */,
+				6BE888D2278CBBD300D11AAE /* ContentModel.swift in Sources */,
+				6BE8888E278CBB3900D11AAE /* SceneDelegate.swift in Sources */,
+				6BE888E5278CCD5400D11AAE /* CollectionFooterReusableView.swift in Sources */,
+				6BE888CC278CBBC600D11AAE /* URLSession+Extension.swift in Sources */,
+				6BE888DF278CBBE100D11AAE /* ModelCollectionCell.swift in Sources */,
+				6BE888E0278CBBE100D11AAE /* HeaderReusableView.swift in Sources */,
+				6BE888CD278CBBC600D11AAE /* iTunesAPI.swift in Sources */,
+				6BE888C7278CBBC600D11AAE /* DetailViewModel.swift in Sources */,
+				6BE888CB278CBBC600D11AAE /* ResponseModel.swift in Sources */,
+				6BE888C8278CBBC600D11AAE /* FooterViewModel.swift in Sources */,
+				6BE888DC278CBBE100D11AAE /* DetailViewController.swift in Sources */,
+				6BE888CE278CBBC600D11AAE /* HeaderViewModel.swift in Sources */,
+				6BE888D1278CBBD300D11AAE /* SectionModel.swift in Sources */,
+				6BE888DD278CBBE100D11AAE /* SplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE8889A278CBB3B00D11AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE888A3278CBB3B00D11AAE /* iTunesSearchAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE888A4278CBB3B00D11AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE888AD278CBB3B00D11AAE /* iTunesSearchAPIUITests.swift in Sources */,
+				6BE888AF278CBB3B00D11AAE /* iTunesSearchAPIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BE888A0278CBB3B00D11AAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BE88887278CBB3900D11AAE /* iTunesSearchAPI */;
+			targetProxy = 6BE8889F278CBB3B00D11AAE /* PBXContainerItemProxy */;
+		};
+		6BE888AA278CBB3B00D11AAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BE88887278CBB3900D11AAE /* iTunesSearchAPI */;
+			targetProxy = 6BE888A9278CBB3B00D11AAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BE88891278CBB3900D11AAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BE88892278CBB3900D11AAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BE88896278CBB3B00D11AAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BE88897278CBB3B00D11AAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BE888B0278CBB3B00D11AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BE888B1278CBB3B00D11AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BE888B3278CBB3B00D11AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 570535850E4DF6A9AD212B25 /* Pods-iTunesSearchAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A47M5VZABS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iTunesSearchAPI/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nurcihankarayakali.iTunesSearchAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BE888B4278CBB3B00D11AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C55D781F7069CFAC955E6A0 /* Pods-iTunesSearchAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A47M5VZABS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iTunesSearchAPI/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nurcihankarayakali.iTunesSearchAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6BE888B6278CBB3B00D11AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7353E7324F765EE348C3959 /* Pods-iTunesSearchAPITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A47M5VZABS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nurcihankarayakali.iTunesSearchAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesSearchAPI.app/iTunesSearchAPI";
+			};
+			name = Debug;
+		};
+		6BE888B7278CBB3B00D11AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913AFE93A6C0DA9817522698 /* Pods-iTunesSearchAPITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A47M5VZABS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nurcihankarayakali.iTunesSearchAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesSearchAPI.app/iTunesSearchAPI";
+			};
+			name = Release;
+		};
+		6BE888B9278CBB3B00D11AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6065DF7C12422E0F804F954 /* Pods-iTunesSearchAPI-iTunesSearchAPIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A47M5VZABS;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nurcihankarayakali.iTunesSearchAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iTunesSearchAPI;
+			};
+			name = Debug;
+		};
+		6BE888BA278CBB3B00D11AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7B248C8FA9BA2802476A4E /* Pods-iTunesSearchAPI-iTunesSearchAPIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A47M5VZABS;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nurcihankarayakali.iTunesSearchAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iTunesSearchAPI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BE88883278CBB3900D11AAE /* Build configuration list for PBXProject "iTunesSearchAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE888B0278CBB3B00D11AAE /* Debug */,
+				6BE888B1278CBB3B00D11AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE888B2278CBB3B00D11AAE /* Build configuration list for PBXNativeTarget "iTunesSearchAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE888B3278CBB3B00D11AAE /* Debug */,
+				6BE888B4278CBB3B00D11AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE888B5278CBB3B00D11AAE /* Build configuration list for PBXNativeTarget "iTunesSearchAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE888B6278CBB3B00D11AAE /* Debug */,
+				6BE888B7278CBB3B00D11AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BE888B8278CBB3B00D11AAE /* Build configuration list for PBXNativeTarget "iTunesSearchAPIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE888B9278CBB3B00D11AAE /* Debug */,
+				6BE888BA278CBB3B00D11AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BE88880278CBB3900D11AAE /* Project object */;
+}
