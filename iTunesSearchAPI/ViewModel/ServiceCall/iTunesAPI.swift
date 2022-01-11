@@ -16,16 +16,18 @@ class iTunesAPI {
     func getContentResponseWithSearch(searchLink: URL, completion: @escaping ([SegmentModel]? , Int) -> ()){
         
         let task = URLSession.shared.sendRequest(url: searchLink, completionHandler:{(result: ResponseModel?, response, error) in
-        
-        if let error = error {
-            print("Error: \(error)")
-            completion(nil, 0)
-        }
+            if let error = error {
+                print("Error: \(error)")
+                completion(nil, 0)
+                return
+            }
             if let model = result?.results{
                 self.items.append(contentsOf: model)
                 completion(self.groupAndCreateSectionList(contentList:self.items) , model.count)
             }
-            completion(nil, 0)
+            else{
+                completion(nil, 0)
+            }
         })
         task.resume()
     }
